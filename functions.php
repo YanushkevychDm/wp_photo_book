@@ -13,10 +13,16 @@ add_action('wp_enqueue_scripts', 'photo_book_files');
 
 
 function admin_features() {
+  // Картинка к посту
   add_theme_support('post-thumbnails');
+
+
+  add_theme_support('title-tag');
 }
 
 add_action('after_setup_theme', 'admin_features');
+
+
 
 
 

@@ -3,6 +3,7 @@
 <div  class="home-parallax"
       style=" background-image: url(<?php echo get_theme_file_uri('/img/home_parallax.jpg') ?>;)">
 </div>
+<?php  get_the_ID(); ?>
   <section class="two-columns bg-light-grey">
       <div class="hr-m"></div>
       <div class="two-columns__first two-columns__first--separate">
@@ -14,8 +15,10 @@
       </div>
       <div class="two-columns__second">
           <div class="round">
-              <!-- <div class="round__img"></div> -->
-              <img class="round__img" src="<?php echo get_theme_file_uri('/img/avatar.jpg') ?>;"  alt="avatar">
+             
+          <img class="round__img" 
+                src="<?php echo get_the_post_thumbnail_url() ?>;" alt="avatar"
+                style="object-fit: cover; object-position: 50% 0;">
           </div>
           
       </div>
@@ -26,28 +29,28 @@
       <div class="hr-m"></div>
       <div class="four-columns-wrap">
           <svg class="icon icon--large">
-              <use xlink:href="wp-content/themes/amazing-photo-book/svg/sprite.svg#icon-boy-broad-smile"></use>
+              <use xlink:href="<?php echo get_theme_file_uri('svg/sprite.svg')."#icon-boy-broad-smile"?>"></use>
           </svg>
           <div class="hr-xs"></div>
           <a href="portfolio.html#child-photo" class="button button--light">Дитячі фото</a>
       </div>
       <div class="four-columns-wrap">
           <svg class="icon icon--large">
-              <use xlink:href="wp-content/themes/amazing-photo-book/svg/sprite.svg#icon-parents"></use>
+              <use xlink:href="<?php echo get_theme_file_uri('svg/sprite.svg')."#icon-parents"?>"></use>
           </svg>
           <div class="hr-xs"></div>
           <a href="portfolio.html#family-photo" class="button button--light">Сімейні фото</a>
       </div>
       <div class="four-columns-wrap">
           <svg class="icon icon--large">
-              <use xlink:href="wp-content/themes/amazing-photo-book/svg/sprite.svg#icon-apple-and-grapes-on-a-bowl"></use>
+              <use xlink:href="<?php echo get_theme_file_uri('svg/sprite.svg')."#icon-apple-and-grapes-on-a-bowl"?>"></use>
           </svg>
           <div class="hr-xs"></div>
           <a href="portfolio.html#still-photo" class="button button--light">Натюрморт</a>
       </div>
       <div class="four-columns-wrap">
           <svg class="icon icon--large">
-              <use xlink:href="wp-content/themes/amazing-photo-book/svg/sprite.svg#icon-photo-album"></use>
+              <use xlink:href="<?php echo get_theme_file_uri('svg/sprite.svg')."#icon-photo-album"?>"></use>
           </svg>
           <div class="hr-xs"></div>
           <a href="portfolio.html#book-photo" class="button button--light">Фотокнига</a>
@@ -137,7 +140,7 @@
                         </div>
                     </div> 
                     <div class="hr-s"></div>
-                <?php }
+                <?php }  wp_reset_postdata();
             ?>
           </div>
       </div>
@@ -177,7 +180,7 @@
                         </div>
                     </div> 
                     <div class="hr-s"></div>
-                <?php }
+                <?php } wp_reset_postdata();
             ?>           
           </div>
       </div>
@@ -200,15 +203,13 @@
   <section class="two-columns">
       <div class="hr-m"></div>
       <div class="two-columns__first two-columns__first--separate">
-          <!-- <p class="about-text">Я у соціальних мережах</p> -->
           <h3 class="h3">Я у соціальних мережах</h4>
           <p class="facebook">Facebook</p>
           <p class="about-text">Підписуйтесь на мій профіль, щоб бачити найсвіжіші фото моєї творчості! </p>
 
           <a href="https://www.facebook.com/vlamelnik?hc_ref=ARTZyOXtilzgCTKLxFUHsO18spYlsviy0QcoMSgS3x8n0SDBDFg3F4Ftg7eAt6oQQiM&fref=nf&__xts__[0]=68.ARATWGLKrnMjQ9mXY4ZK-bs-JRJ5fyA5jenrRZ3rxXJQUSsKrIP_nEEWwL3VhTacBuOoxhYqABd1bmQmnXb0z5icWz4rx5HGKJMGlNIfrxOWY9QdhJ1qX185cC_SOCuL-Q5qsbCETnKITQP9d9o82NUfv2xtgHA2i-onzmZsxtzDpSosP9ir&__tn__=C-R">
-              <!-- <img class="media" src="./img/svg/facebook-square.svg" alt=""> -->
               <svg class="icon icon--medium">
-                  <use xlink:href="svg/sprite.svg#icon-facebook-square"></use>
+                  <use xlink:href="<?php echo get_theme_file_uri('svg/sprite.svg')."#icon-facebook-square"?>"></use>
               </svg>
           </a>
           
@@ -244,6 +245,7 @@
       <div class="hr-xs"></div>
       <h4 class="h4">З повагою, Володимир Мельник</h4>
       <h4 class="h4">Ваш весільний фотограф</h4>
+
       <div class="hr-m"></div>
       
     

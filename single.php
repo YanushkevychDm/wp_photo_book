@@ -13,6 +13,8 @@
     </div>
     <div class="hr-s"></div>
     <a href="<?php echo site_url('/blog'); ?>" class="button button--bright-2">Інші статті</a>
+    <div class="hr-s"></div>
+    <?php comments_template(); ?>
 </article>
 
 <?php get_footer(); ?>

@@ -6,19 +6,19 @@
         <div class="contact">
             <div class="contact__info"> 
                 <svg class="icon icon--small">
-                    <use xlink:href="wp-content/themes/amazing-photo-book/svg/sprite.svg#icon-phone"></use>
+                    <use xlink:href="<?php echo get_theme_file_uri('svg/sprite.svg')."#icon-phone"?>"></use>
                 </svg>
                <span class="contact__address">  +380 67-886-06-09</span>
             </div>
             <div class="contact__info">
                     <svg class="icon icon--small">
-                        <use xlink:href="wp-content/themes/amazing-photo-book/svg/sprite.svg#icon-envelop"></use>
+                        <use xlink:href="<?php echo get_theme_file_uri('svg/sprite.svg')."#icon-envelop"?>"></use>
                     </svg>
                     <span class="contact__address"> e-mail: vlamelnik@gmail.com</span>
             </div>
             <div class="contact__info"> 
                 <svg class="icon icon--small">
-                    <use xlink:href="wp-content/themes/amazing-photo-book/svg/sprite.svg#icon-facebook-square"></use>
+                    <use xlink:href="<?php echo get_theme_file_uri('svg/sprite.svg')."#icon-facebook-square"?>"></use>
                 </svg>
                 <a href="https://www.facebook.com/vlamelnik?hc_ref=ARTZyOXtilzgCTKLxFUHsO18spYlsviy0QcoMSgS3x8n0SDBDFg3F4Ftg7eAt6oQQiM&fref=nf&__xts__[0]=68.ARATWGLKrnMjQ9mXY4ZK-bs-JRJ5fyA5jenrRZ3rxXJQUSsKrIP_nEEWwL3VhTacBuOoxhYqABd1bmQmnXb0z5icWz4rx5HGKJMGlNIfrxOWY9QdhJ1qX185cC_SOCuL-Q5qsbCETnKITQP9d9o82NUfv2xtgHA2i-onzmZsxtzDpSosP9ir&__tn__=C-R">
                     <span class="contact__address">/Володимир Мельник</span>
