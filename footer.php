@@ -28,10 +28,10 @@
     </div>
   </div>
   <div class="two-columns__second--long">
-      <div class="single-column">
-          <h4 class="h4 h4--light">РОЗДІЛИ</h4>
-          <div><a class="link upper" href="portfolio.html">Галерея</a> </div>                      
-          <div><a class="link upper" href="about.html">Оплата</a> </div>                                       
+      <div class="single-column upper">
+        <?php if(is_active_sidebar('footer')) : ?>
+            <?php dynamic_sidebar('footer') ?>
+        <?php endif; ?>                                
       </div>
       <div class="single-column">
           <h4 class="h4 h4--light"> ВИДИ ФОТОЗЙОМКИ</h4>
