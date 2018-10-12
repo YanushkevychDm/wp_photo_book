@@ -1,5 +1,22 @@
 <?php 
 
+function pageBanner($args) {
+
+  if(!$args['title']) {
+    $args['title'] = '';
+  }
+
+  ?>
+  <div class="banner">
+    <div class="banner__bg"></div>
+    <img class="banner__img" 
+        src="<?php $pageBannerImage = get_field('page_banner');
+        echo $pageBannerImage['url'] ?>" alt="banner">
+    <h1 class="h1 h1--light center banner__top"><?php echo $args['title'];?></h1>
+</div>
+<?php }
+
+
 function photo_book_files() {
   // wp_enqueue_script('main_script', get_theme_file_uri('/js/main.js'), NULL, '1.0', true);
   wp_enqueue_script('jQuery', get_theme_file_uri('/js/jQuery.min.js'), NULL, '1.0', true);
@@ -16,7 +33,7 @@ add_action('wp_enqueue_scripts', 'photo_book_files');
 function admin_features() {
   // Картинка к посту
   add_theme_support('post-thumbnails');
-
+  add_image_size('pageBanner', 2000, 300, true);
 
   add_theme_support('title-tag');
 }
@@ -35,6 +52,7 @@ function init_widgets($id) {
 }
 
 add_action('widgets_init', 'init_widgets');
+
 
 
 

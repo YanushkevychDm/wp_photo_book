@@ -1,13 +1,16 @@
 <?php get_header(); the_post(); ?>
 
-<div class="about-header"></div>
+<?php pageBanner($args);  ?> 
 
 
 <section class="two-columns bg-light-grey">
     <div class="hr-m"></div>
     <div class="two-columns__first two-columns__first--separate">
         <div class="round">
-            <div class="round__img"></div>
+            <img class="round__img" 
+                src="<?php echo get_the_post_thumbnail_url() ?>;" alt="avatar"
+                style="object-fit: cover; object-position: 50% 0;">
+            </div>
         </div>
     </div>
     <div class="two-columns__second">
@@ -21,7 +24,6 @@
         <h3 class="h3">vlamelnik@gmail.com</h3>
         <div class="hr-s"></div>
         <a class="center" href="https://www.facebook.com/vlamelnik?hc_ref=ARTZyOXtilzgCTKLxFUHsO18spYlsviy0QcoMSgS3x8n0SDBDFg3F4Ftg7eAt6oQQiM&fref=nf&__xts__[0]=68.ARATWGLKrnMjQ9mXY4ZK-bs-JRJ5fyA5jenrRZ3rxXJQUSsKrIP_nEEWwL3VhTacBuOoxhYqABd1bmQmnXb0z5icWz4rx5HGKJMGlNIfrxOWY9QdhJ1qX185cC_SOCuL-Q5qsbCETnKITQP9d9o82NUfv2xtgHA2i-onzmZsxtzDpSosP9ir&__tn__=C-R">
-            <!-- <i class="fa social social--light">&#xf09a;</i> -->
             <svg class="icon icon--medium">
                 <use xlink:href="svg/sprite.svg#icon-facebook-square"></use>
             </svg>

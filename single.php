@@ -3,7 +3,7 @@
   $theParent = wp_get_post_parent_id(get_the_ID());
 ?>
 
- <div class="blog-header"></div>
+<?php pageBanner($args);  ?> 
 
 <article class="blog-post">
     <h1 class="h1"><?php the_title(); ?></h1>

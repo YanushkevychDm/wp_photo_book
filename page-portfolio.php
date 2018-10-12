@@ -1,6 +1,6 @@
 <?php get_header(); the_post(); ?>
 
-<div class="review-header"></div>
+<?php pageBanner($args);  ?> 
 
 <section class="portfolio">
         <div class="hr-s" id="child-photo"></div>

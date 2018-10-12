@@ -1,10 +1,6 @@
 <?php get_header(); the_post(); ?>
 
-<div class="price-parallax"  
-      style=" background-image: url(<?php echo get_theme_file_uri('/img/home-price.jpg') ?>;);
-        background-size: cover ">>
-    <h1 class="h1 h1--light center">Ціни на фотографії та альбоми</h1>
-</div>
+<?php pageBanner($args);  ?> 
    
 <section class="four-columns four-columns--blank">
     <div class="hr-m"></div>

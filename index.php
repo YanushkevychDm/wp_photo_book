@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 
-<div class="blog-header"
-    style=" background-image: url(<?php echo get_theme_file_uri('/img/home_parallax.jpg') ?>;)">
-</div>
+<?php pageBanner($args);  ?> 
 
 <div class="hr-m"></div>
 <div class="grid-simple">
@@ -20,7 +18,7 @@
                     <img class="article__img" 
                     src="<?php echo get_the_post_thumbnail_url() ?>;" alt="color">
                 </a>
-                <div class=""> 
+                <div class="article__meta"> 
                     <?php the_time('d.m.Y'); ?>, 
                     <?php the_author_posts_link(); ?>, 
                     <?php echo get_the_category_list(', '); ?>
