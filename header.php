@@ -2,6 +2,7 @@
 <html>
 <head>
   <?php wp_head(); ?>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400&amp;subset=cyrillic" rel="stylesheet"> 
 </head>
 <body>
 <nav id="nav" class="nav">

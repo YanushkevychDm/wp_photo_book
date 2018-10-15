@@ -32,28 +32,28 @@
               <use xlink:href="<?php echo get_theme_file_uri('svg/sprite.svg')."#icon-boy-broad-smile"?>"></use>
           </svg>
           <div class="hr-xs"></div>
-          <a href="portfolio.html#child-photo" class="button button--light">Дитячі фото</a>
+          <a href="<?php echo site_url('/portfolio#child-photo'); ?>" class="button button--light">Дитячі фото</a>
       </div>
       <div class="four-columns-wrap">
           <svg class="icon icon--large">
               <use xlink:href="<?php echo get_theme_file_uri('svg/sprite.svg')."#icon-parents"?>"></use>
           </svg>
           <div class="hr-xs"></div>
-          <a href="portfolio.html#family-photo" class="button button--light">Сімейні фото</a>
+          <a href="<?php echo site_url('/portfolio#family-photo'); ?>" class="button button--light">Сімейні фото</a>
       </div>
       <div class="four-columns-wrap">
           <svg class="icon icon--large">
               <use xlink:href="<?php echo get_theme_file_uri('svg/sprite.svg')."#icon-apple-and-grapes-on-a-bowl"?>"></use>
           </svg>
           <div class="hr-xs"></div>
-          <a href="portfolio.html#still-photo" class="button button--light">Натюрморт</a>
+          <a href="<?php echo site_url('/portfolio#still-photo'); ?>" class="button button--light">Натюрморт</a>
       </div>
       <div class="four-columns-wrap">
           <svg class="icon icon--large">
               <use xlink:href="<?php echo get_theme_file_uri('svg/sprite.svg')."#icon-photo-album"?>"></use>
           </svg>
           <div class="hr-xs"></div>
-          <a href="portfolio.html#book-photo" class="button button--light">Фотокнига</a>
+          <a href="<?php echo site_url('/portfolio#book-photo'); ?>" class="button button--light">Фотокнига</a>
       </div>
       <div class="hr-m"></div>
       
@@ -92,7 +92,7 @@
           </div>
             </div>
       <div class="hr-s"></div>
-      <a href="portfolio.html" class="button button--bright-1 center">Переглянути більше</a>
+      <a href="<?php echo site_url('/portfolio'); ?>" class="button button--bright-1 center">Переглянути більше</a>
       <div class="hr-s"></div>
 
   </section>
@@ -197,7 +197,7 @@
           <p class="price__text">Вас зацікавили мої роботи і ви б хотіли дізнатися ціну, </p>
           <p class="price__text">передзвоніть мені або залишіть заявку.</p>
           <div class="hr-s"></div>
-          <a href="price.html" class="button button--light">Дізнатися ціну</a>
+          <a href="<?php echo site_url('/price'); ?>" class="button button--light">Дізнатися ціну</a>
       </div>
   </section>
   <section class="two-columns">
@@ -215,20 +215,10 @@
           
       </div>
       <div class="two-columns__second">
-          <div class="frame">
-              <!-- <div class="frame__img frame__img-1"></div>
-              <div class="frame__img frame__img-2"></div>
-              <div class="frame__img frame__img-3"></div>
-              <div class="frame__img frame__img-4"></div>
-              <div class="frame__img frame__img-5"></div>
-              <div class="frame__img frame__img-6"></div>
-              <div class="frame__img frame__img-1"></div>
-              <div class="frame__img frame__img-2"></div>
-              <div class="frame__img frame__img-3"></div>
-              <div class="frame__img frame__img-4"></div>
-              <div class="frame__img frame__img-5"></div>
-              <div class="frame__img frame__img-6"></div> -->
-              <?php ?>
+          <div class="frame">       
+                <?php if(is_active_sidebar('gallery')) : ?>
+                    <?php dynamic_sidebar('gallery') ?>
+                <?php endif; ?>   
           </div>
       </div>
       <div class="hr-m"></div>

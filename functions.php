@@ -54,6 +54,13 @@ function init_widgets($id) {
     'before_title'  => '<h4 class="h4 h4--light upper">',
     'after_title'   => '</h4>' 
   ));
+
+  register_sidebar(array(
+    'name'          => 'Gallery',
+    'id'            => 'gallery',
+    'before_title'  => '<h4 class="h3 upper">',
+    'after_title'   => '</h4>' 
+  ));
 }
 
 add_action('widgets_init', 'init_widgets');
