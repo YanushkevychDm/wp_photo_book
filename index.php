@@ -3,7 +3,7 @@
  <div class="banner">
     <div class="banner__bg"></div>
     <img class="banner__img" 
-        src="<?php echo get_theme_file_uri('/img/home_parallax.jpg') ?>" alt="gdrgdrg">
+        src="<?php echo get_theme_file_uri('/img/blog-baner.jpg') ?>" alt="gdrgdrg">
     <h1 class="h1 h1--light center banner__top"><?php echo $args['title'];?></h1>
 </div> 
 

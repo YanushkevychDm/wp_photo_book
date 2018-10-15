@@ -7,8 +7,8 @@ function pageBanner($args) {
   }
 
   if (!$args['photo']) {
-    if (get_field('page_banner_background_image')) {
-      $args['photo'] = get_field('page_banner_background_image')['sizes']['pageBanner'];
+    if (get_field('page_banner')) {
+      $args['photo'] = get_field('page_banner')['sizes']['pageBanner'];
     } else {
       $args['photo'] = get_theme_file_uri('/img/sunset.jpg');
     }

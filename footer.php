@@ -2,7 +2,7 @@
     <div class="hr-m"></div>
     <div class="two-columns__first">
     <div class="single-column">
-        <div class="hr-xs"></div>
+
         <div class="contact">
             <div class="contact__info"> 
                 <svg class="icon icon--small">
@@ -24,6 +24,18 @@
                     <span class="contact__address">/Володимир Мельник</span>
                 </a> 
             </div>
+            <div class="contact__info"> 
+                <svg class="icon icon--small">
+                    <use xlink:href="<?php echo get_theme_file_uri('svg/sprite.svg')."#icon-magnifier"?>"></use>
+                </svg>
+                <form method="get" action="<?php echo esc_url(home_url('/')); ?>">
+                    <span class="contact__address">
+                        <input name="s" type="text" class="search-input" placeholder="Пошук...">
+                    </span>
+                </form>
+            </div>
+  
+
         </div>
     </div>
   </div>
