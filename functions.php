@@ -6,25 +6,30 @@ function pageBanner($args) {
     $args['title'] = '';
   }
 
+  if (!$args['photo']) {
+    if (get_field('page_banner_background_image')) {
+      $args['photo'] = get_field('page_banner_background_image')['sizes']['pageBanner'];
+    } else {
+      $args['photo'] = get_theme_file_uri('/img/sunset.jpg');
+    }
+  }
+
+  
   ?>
   <div class="banner">
     <div class="banner__bg"></div>
     <img class="banner__img" 
-        src="<?php $pageBannerImage = get_field('page_banner');
-        echo $pageBannerImage['url'] ?>" alt="banner">
+        src="<?php echo $args['photo']; ?>" alt="banner">
     <h1 class="h1 h1--light center banner__top"><?php echo $args['title'];?></h1>
 </div>
 <?php }
 
 
+
+
 function photo_book_files() {
-  // wp_enqueue_script('main_script', get_theme_file_uri('/js/main.js'), NULL, '1.0', true);
-  wp_enqueue_script('jQuery', get_theme_file_uri('/js/jQuery.min.js'), NULL, '1.0', true);
-  wp_enqueue_script('btn_to_top', get_theme_file_uri('/js/buttonToTop.js'), NULL, microtime(), true);
-  wp_enqueue_script('navigation', get_theme_file_uri('/js/navbar.js'), NULL, '1.0', true);
+  wp_enqueue_script('main_script', get_theme_file_uri('/js/main.js'), NULL, '1.0', true);
   wp_enqueue_style('photo_book_styles', get_stylesheet_uri(), NULL, microtime());
-  wp_enqueue_style('photo_book_styles_wp', get_stylesheet_uri('/wp_style.css'),  NULL, 1.0);
-  
 }
 
 add_action('wp_enqueue_scripts', 'photo_book_files');

@@ -216,7 +216,7 @@
       </div>
       <div class="two-columns__second">
           <div class="frame">
-              <div class="frame__img frame__img-1"></div>
+              <!-- <div class="frame__img frame__img-1"></div>
               <div class="frame__img frame__img-2"></div>
               <div class="frame__img frame__img-3"></div>
               <div class="frame__img frame__img-4"></div>
@@ -227,7 +227,8 @@
               <div class="frame__img frame__img-3"></div>
               <div class="frame__img frame__img-4"></div>
               <div class="frame__img frame__img-5"></div>
-              <div class="frame__img frame__img-6"></div>
+              <div class="frame__img frame__img-6"></div> -->
+              <?php ?>
           </div>
       </div>
       <div class="hr-m"></div>

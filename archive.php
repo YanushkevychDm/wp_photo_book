@@ -1,15 +1,6 @@
 <?php get_header(); ?>
 
-<div class="blog-header"
-    style=" background-image: url(<?php echo get_theme_file_uri('/img/home_parallax.jpg') ?>;)">
-    <div class="price__wrap">
-          <h2 class="h2 h2--light"> 
-            <?php the_archive_title(); ?> 
-          </h2>
-          <!-- <div class="hr-xs"></div> -->
-          <div class="price__text"><?php the_archive_description(); ?></div>
-      </div>
-</div>
+<?php pageBanner($args);  ?> 
 
 <div class="hr-m"></div>
 <div class="grid-simple">

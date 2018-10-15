@@ -3,7 +3,13 @@
   $theParent = wp_get_post_parent_id(get_the_ID());
 ?>
 
-<?php pageBanner($args);  ?> 
+ <div class="banner">
+    <div class="banner__bg"></div>
+    <img class="banner__img" 
+        src="<?php echo get_theme_file_uri('/img/home_parallax.jpg') ?>" alt="gdrgdrg">
+        
+    <h1 class="h1 h1--light center banner__top"><?php echo $args['title'];?></h1>
+</div>
 
 <article class="blog-post">
     <h1 class="h1"><?php the_title(); ?></h1>

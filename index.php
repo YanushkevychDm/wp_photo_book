@@ -1,11 +1,16 @@
 <?php get_header(); ?>
 
-<?php pageBanner($args);  ?> 
+ <div class="banner">
+    <div class="banner__bg"></div>
+    <img class="banner__img" 
+        src="<?php echo get_theme_file_uri('/img/home_parallax.jpg') ?>" alt="gdrgdrg">
+    <h1 class="h1 h1--light center banner__top"><?php echo $args['title'];?></h1>
+</div> 
 
 <div class="hr-m"></div>
 <div class="grid-simple">
  
-    <?php 
+    <?php  
         while(have_posts()) {
             the_post(); ?>
             <div class="article">
