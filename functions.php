@@ -29,7 +29,9 @@ function pageBanner($args) {
 
 function photo_book_files() {
   wp_enqueue_script('main_script', get_theme_file_uri('/js/main.js'), NULL, '1.0', true);
-  wp_enqueue_style('photo_book_styles', get_stylesheet_uri(), NULL, microtime());
+  wp_enqueue_style('photo_book_styles', get_stylesheet_uri());
+  wp_enqueue_style('google_fonts', 'https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Oswald:300,400&amp;subset=cyrillic');
+
 }
 
 add_action('wp_enqueue_scripts', 'photo_book_files');

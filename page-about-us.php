@@ -34,4 +34,24 @@
                 
 </section>
 
+<?php if(have_posts()) : ?>
+    <?php    the_post(); ?>
+<?php endif; ?>
+
+
+<section class="two-columns">
+    <div class="hr-m"></div>
+    <div class="two-columns__first">
+        <h3 class="h3 center">Напишіть мені</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo felis tellus, sit amet euismod leo placerat eget. Maecenas mattis enim in lacinia ornare. Phasellus eget felis nunc. Fusce imperdiet porta ipsum, ac vehicula mi ultrices ac. Praesent ullamcorper, risus eget posuere varius, dolor lorem luctus velit, vitae imperdiet tellus purus vitae turpis. Donec eleifend massa et sapien maximus fringilla. Sed gravida libero magna. Duis tempus mattis elit, eu lobortis leo efficitur nec. </p>
+        <div class="hr-m"></div>
+
+    </div>
+    <div class="two-columns__second">
+       <?php the_content(); ?>
+    </div>
+
+    <div class="hr-m"></div>
+            
+</section>
 <?php get_footer(); ?>

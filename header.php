@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><?php bloginfo('name'); ?></title>
   <?php wp_head(); ?>
-  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400&amp;subset=cyrillic" rel="stylesheet"> 
+  <!-- <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Oswald:300,400&amp;subset=cyrillic" rel="stylesheet">  -->
 </head>
-<body>
+<body <?php body_class(); ?>>
 <nav id="nav" class="nav">
     <button class="menu">
       <em class="hamburger"></em>

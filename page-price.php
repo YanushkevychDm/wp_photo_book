@@ -99,18 +99,17 @@
     <div class="hr-m"></div>
 </section>
 
-<section class="price price__back-1" 
-        style=" background-image: url(<?php echo get_theme_file_uri('/img/home-price.jpg') ?>;);
-        background-size: cover ">
-    <div class="price__wrap">
+  <section class="picture">
+      <img src="<?php echo get_theme_file_uri('/img/finger.jpg') ?>;" alt="" class="picture__img">
+      <div class="picture__text">
         <h2 class="h2 h2--light">Замовити фотосесію</h2>
         <div class="hr-xs"></div>
         <p class="price__text">+380 67-886-06-09</p>
         <p class="price__text">vlamelnik@gmail.com</p>
         <div class="hr-s"></div>
         <a href="review.html" class="button button--light">Відгуки</a>
-    </div>
-</section>
+      </div>
+  </section>
 
 <div class="hr-m"></div>
 <section class="grid-simple">

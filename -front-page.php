@@ -1,15 +1,8 @@
 <?php get_header(); ?>
 
- <div  class="home-parallax"
-      style=" background: linear-gradient(rgba(0, 0, 0, 0.8),  rgba(0, 0, 0, 0.8)), url(<?php echo get_theme_file_uri('/img/boat.jpg') ?>);
-        min-height: 100vh;
-        background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-        ">
-</div> 
-
+<div  class="home-parallax"
+      style=" background-image: url(<?php echo get_theme_file_uri('/img/home_parallax.jpg') ?>;)">
+</div>
 <?php  get_the_ID(); ?>
   <section class="two-columns bg-light-grey">
       <div class="hr-m"></div>
@@ -65,14 +58,43 @@
       <div class="hr-m"></div>
       
   </section>
-
-  <?php if(have_posts()) the_post();
-        the_content();
-        ?>
   <section class="carousel">
-    <div class="hr-s"></div>
-        <a href="portfolio.html" class="button button--bright-1 center">Переглянути більше</a>
-    <div class="hr-s"></div>
+
+      <div class="carousel__container">
+          <div class="rotator-wrap">
+              <ul class="rotator">
+                  <li><div><img class="rotator__img" 
+                                src="<?php echo get_theme_file_uri('/img/carousel-1.jpg') ?>;"
+                                alt="" />
+                  </div></li>
+                  <li><div><img class="rotator__img" 
+                                src="<?php echo get_theme_file_uri('/img/carousel-2.jpg') ?>;"
+                                alt="" />
+                  </div></li>
+                  <li><div><img class="rotator__img" 
+                                src="<?php echo get_theme_file_uri('/img/carousel-3.jpg') ?>;"
+                                alt="" />
+                  </div></li>
+                  <li><div><img class="rotator__img" 
+                                src="<?php echo get_theme_file_uri('/img/carousel-1.jpg') ?>;"
+                                alt="" />
+                  </div></li>
+                  <li><div><img class="rotator__img" 
+                                src="<?php echo get_theme_file_uri('/img/carousel-2.jpg') ?>;"
+                                alt="" />
+                  </div></li>
+                  <li><div><img class="rotator__img" 
+                                src="<?php echo get_theme_file_uri('/img/carousel-3.jpg') ?>;"
+                                alt="" />
+                  </div></li>
+    
+              </ul>
+          </div>
+            </div>
+      <div class="hr-s"></div>
+      <a href="<?php echo site_url('/portfolio'); ?>" class="button button--bright-1 center">Переглянути більше</a>
+      <div class="hr-s"></div>
+
   </section>
 
   <section class="two-columns">
@@ -86,10 +108,13 @@
       <div class="two-columns__first">
         <div class="two-rows">
             <?php
+                if(have_posts()) the_post();
                 $homepagePosts_1 = new WP_Query(array(
                     'posts_per_page' => 2,
-                    'category_name' => 'Художній портрет'
+                    'category_name' => 'Сім\'я'
                 ));
+
+
                 while($homepagePosts_1->have_posts()) {
                     $homepagePosts_1->the_post(); ?>
                     <div class="home-blog__wrap">
@@ -126,8 +151,10 @@
           <?php
                 $homepagePosts_2 = new WP_Query(array(
                     'posts_per_page' => 2,
-                    'category_name' => 'Технологія'
+                    'category_name' => 'Весілля'
                 ));
+
+
                 while($homepagePosts_2->have_posts()) {
                     $homepagePosts_2->the_post(); ?>
                     <div class="home-blog__wrap">
@@ -163,9 +190,9 @@
       <div class="hr-s"></div>
   </section>
 
-  <section class="picture">
-      <img src="<?php echo get_theme_file_uri('/img/pen.jpg') ?>;" alt="" class="picture__img">
-      <div class="picture__text">
+  <section  class="price"
+            style=" background-image: url(<?php echo get_theme_file_uri('/img/home-price.jpg') ?>;)">
+      <div class="price__wrap">
           <h2 class="h2 h2--light">Цікавить ціна?</h2>
           <div class="hr-xs"></div>
           <p class="price__text">Вас зацікавили мої роботи і ви б хотіли дізнатися ціну, </p>
@@ -174,7 +201,6 @@
           <a href="<?php echo site_url('/price'); ?>" class="button button--light">Дізнатися ціну</a>
       </div>
   </section>
-
   <section class="two-columns">
       <div class="hr-m"></div>
       <div class="two-columns__first two-columns__first--separate">
@@ -189,21 +215,12 @@
           </a>
           
       </div>
-      <div class="two-columns__second">  
-            <div class="image-grid">
-                <a href="<?php echo site_url('/portfolio'); ?>"> <img src=" <?php echo get_theme_file_uri('/img/collage/1.jpg') ?>" alt=""></a>
-                <a href="<?php echo site_url('/portfolio'); ?>"> <img src=" <?php echo get_theme_file_uri('/img/collage/2.jpg') ?>" alt=""></a>
-                <a href="<?php echo site_url('/portfolio'); ?>"> <img src=" <?php echo get_theme_file_uri('/img/collage/3.jpg') ?>" alt=""></a>
-                <a href="<?php echo site_url('/portfolio'); ?>"> <img src=" <?php echo get_theme_file_uri('/img/collage/4.jpg') ?>" alt=""></a>
-                <a href="<?php echo site_url('/portfolio'); ?>"> <img src=" <?php echo get_theme_file_uri('/img/collage/5.jpg') ?>" alt=""></a>
-                <a href="<?php echo site_url('/portfolio'); ?>"> <img src=" <?php echo get_theme_file_uri('/img/collage/6.jpg') ?>" alt=""></a>
-                <a href="<?php echo site_url('/portfolio'); ?>"> <img src=" <?php echo get_theme_file_uri('/img/collage/1.jpg') ?>" alt=""></a>
-                <a href="<?php echo site_url('/portfolio'); ?>"> <img src=" <?php echo get_theme_file_uri('/img/collage/2.jpg') ?>" alt=""></a>
-                <a href="<?php echo site_url('/portfolio'); ?>"> <img src=" <?php echo get_theme_file_uri('/img/collage/3.jpg') ?>" alt=""></a>
-                <a href="<?php echo site_url('/portfolio'); ?>"> <img src=" <?php echo get_theme_file_uri('/img/collage/4.jpg') ?>" alt=""></a>
-                <a href="<?php echo site_url('/portfolio'); ?>"> <img src=" <?php echo get_theme_file_uri('/img/collage/5.jpg') ?>" alt=""></a>
-                <a href="<?php echo site_url('/portfolio'); ?>"> <img src=" <?php echo get_theme_file_uri('/img/collage/6.jpg') ?>" alt=""></a>
-            </div>
+      <div class="two-columns__second">
+          <div class="frame">       
+                <?php if(is_active_sidebar('gallery')) : ?>
+                    <?php dynamic_sidebar('gallery') ?>
+                <?php endif; ?>   
+          </div>
       </div>
       <div class="hr-m"></div>
   </section>
