@@ -1,103 +1,12 @@
 <?php get_header(); the_post(); ?>
 
 <?php pageBanner($args);  ?> 
-   
-<section class="four-columns four-columns--blank">
-    <div class="hr-m"></div>
-    <div class="four-columns-wrap">
-        <h2 class="h2 center">Легкий</h2>
-        <div class="hr-min"></div>
-        <ul class="list">
-            <li class="list__item"> Час фотозйомки - до 21.00 год</li>
-            <li class="list__item"> Індивідуальна консультація</li>
-            <li class="list__item"> Відбір та обробка фото від 700+</li>
-            <li class="list__item"> Післявесільна зйомка</li>
-            <li class="list__item"> Фото на флешці у футлярі</li>
-        </ul>
-    </div>
-    <div class="four-columns-wrap">
-        <h2 class="h2 center">Стандарт</h2>
-        <div class="hr-min"></div>
-        <ul class="list">
-            <li class="list__item"> Час фотозйомки - до 21.00 год</li>
-            <li class="list__item"> Індивідуальна консультація</li>
-            <li class="list__item"> Відбір та обробка фото від 700+</li>
-            <li class="list__item"> Післявесільна зйомка</li>
-            <li class="list__item"> Фото на флешці у футлярі</li>
-        </ul>
-    </div>
-    <div class="four-columns-wrap">
-        <h2 class="h2 center">Срібний</h2>
-        <div class="hr-min"></div>
-        <ul class="list">
-            <li class="list__item"> Час фотозйомки - до 21.00 год</li>
-            <li class="list__item"> Індивідуальна консультація</li>
-            <li class="list__item"> Відбір та обробка фото від 700+</li>
-            <li class="list__item"> Післявесільна зйомка</li>
-            <li class="list__item"> Фото на флешці у футлярі</li>
-        </ul>
-    </div>
-    <div class="four-columns-wrap">
-        <h2 class="h2 center">Золотий</h2>
-        <div class="hr-min"></div>
-        <ul class="list">
-            <li class="list__item"> Час фотозйомки - до 21.00 год</li>
-            <li class="list__item"> Індивідуальна консультація</li>
-            <li class="list__item"> Відбір та обробка фото від 700+</li>
-            <li class="list__item"> Післявесільна зйомка</li>
-            <li class="list__item"> Фото на флешці у футлярі</li>
-        </ul>
-    </div>
-    <div class="hr-m"></div>
-</section>
-<section class="four-columns four-columns--light">
-    <div class="hr-m"></div>
-    <div class="four-columns-wrap">
-        <h2 class="h2 center">Альбом 1</h2>
-        <div class="hr-min"></div>
-        <ul class="list">
-            <li class="list__item"> Час фотозйомки - до 21.00 год</li>
-            <li class="list__item"> Індивідуальна консультація</li>
-            <li class="list__item"> Відбір та обробка фото від 700+</li>
-            <li class="list__item"> Післявесільна зйомка</li>
-            <li class="list__item"> Фото на флешці у футлярі</li>
-        </ul>
-    </div>
-    <div class="four-columns-wrap">
-        <h2 class="h2 center">Альбом 2</h2>
-        <div class="hr-min"></div>
-        <ul class="list">
-            <li class="list__item"> Час фотозйомки - до 21.00 год</li>
-            <li class="list__item"> Індивідуальна консультація</li>
-            <li class="list__item"> Відбір та обробка фото від 700+</li>
-            <li class="list__item"> Післявесільна зйомка</li>
-            <li class="list__item"> Фото на флешці у футлярі</li>
-        </ul>
-    </div>
-    <div class="four-columns-wrap">
-        <h2 class="h2 center">Альбом 3</h2>
-        <div class="hr-min"></div>
-        <ul class="list">
-            <li class="list__item"> Час фотозйомки - до 21.00 год</li>
-            <li class="list__item"> Індивідуальна консультація</li>
-            <li class="list__item"> Відбір та обробка фото від 700+</li>
-            <li class="list__item"> Післявесільна зйомка</li>
-            <li class="list__item"> Фото на флешці у футлярі</li>
-        </ul>
-    </div>
-    <div class="four-columns-wrap">
-        <h2 class="h2 center">Альбом 4</h2>
-        <div class="hr-min"></div>
-        <ul class="list">
-            <li class="list__item"> Час фотозйомки - до 21.00 год</li>
-            <li class="list__item"> Індивідуальна консультація</li>
-            <li class="list__item"> Відбір та обробка фото від 700+</li>
-            <li class="list__item"> Післявесільна зйомка</li>
-            <li class="list__item"> Фото на флешці у футлярі</li>
-        </ul>
-    </div>
-    <div class="hr-m"></div>
-</section>
+
+
+<div class="padding">
+    <?php the_content(); ?>
+</div>
+
 
   <section class="picture">
       <img src="<?php echo get_theme_file_uri('/img/finger.jpg') ?>;" alt="" class="picture__img">
@@ -110,6 +19,7 @@
         <a href="review.html" class="button button--light">Відгуки</a>
       </div>
   </section>
+
 
 <div class="hr-m"></div>
 <section class="grid-simple">
@@ -152,5 +62,6 @@
         </p>
     </div>
 </section>
+<div class="hr-m"></div>
 
 <?php  get_footer(); ?>

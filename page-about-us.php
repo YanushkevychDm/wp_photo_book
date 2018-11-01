@@ -43,7 +43,9 @@
     <div class="hr-m"></div>
     <div class="two-columns__first">
         <h3 class="h3 center">Напишіть мені</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo felis tellus, sit amet euismod leo placerat eget. Maecenas mattis enim in lacinia ornare. Phasellus eget felis nunc. Fusce imperdiet porta ipsum, ac vehicula mi ultrices ac. Praesent ullamcorper, risus eget posuere varius, dolor lorem luctus velit, vitae imperdiet tellus purus vitae turpis. Donec eleifend massa et sapien maximus fringilla. Sed gravida libero magna. Duis tempus mattis elit, eu lobortis leo efficitur nec. </p>
+        <p>Дякую за вашу увагу!</p>
+        <p>Постараюся бути корисним, словом і ділом. Якщо у Вас з'явилися будь-які питання, скористайтеся формою зворотного зв'язку.</p>
+        <p>Будь ласка, опишіть вашу задачу або побажання, я із задоволенням відповім письмово або дзвінком.</p>
         <div class="hr-m"></div>
 
     </div>
